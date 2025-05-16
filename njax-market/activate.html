@@ -1,3 +1,4 @@
+<script src="njax-agent.js" defer></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +40,8 @@
       togglePhantom: () => alert("Phantom Mode toggled."),
       syncStore: () => alert("Storefront synced successfully.")
     };
-  </script>
+  <script>
+  NjaxAI?.init && NjaxAI.init();
+</script>
 </body>
 </html>
