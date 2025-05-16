@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | Njax Market</title>
+  <link rel="stylesheet" href="njax.css" />
+</head>
+<body>
+  <h2>Njax AI Settings</h2>
+  <p>Customize how your AI Assistant behaves, sounds, and operates across your store.</p>
+
+  <div class="tool">
+    <h3>Voice Selection</h3>
+    <label><input type="radio" name="voice" value="Samantha" checked /> Samantha (Default)</label><br/>
+    <label><input type="radio" name="voice" value="Dexter" /> Dexter</label><br/>
+    <label><input type="radio" name="voice" value="Zuri" /> Zuri</label>
+  </div>
+
+  <div class="tool">
+    <h3>Assistant Speed</h3>
+    <input type="range" min="1" max="10" value="5" />
+    <p><em>Adjust how fast your AI assistant responds and executes commands.</em></p>
+  </div>
+
+  <div class="tool">
+    <h3>Theme Mode</h3>
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+  </div>
+
+  <div class="tool">
+    <h3>Phantom Mode Auto-Start</h3>
+    <label><input type="checkbox" checked /> Enable on launch</label>
+  </div>
+
+  <footer>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      alert("Theme toggled.");
+    }
+  </script>
+</body>
+</html>
