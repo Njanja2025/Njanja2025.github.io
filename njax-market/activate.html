@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Activate Njax | Njax Market</title>
   <link rel="stylesheet" href="njax.css" />
-  <script src="njax-agent.js" defer></script>
 </head>
 <body>
   <h2>Activate Njax AI Engine</h2>
-  <p>This interface allows you to power up the Njax Assistant, connect store modules, and trigger Phantom AI Mode.</p>
+  <p>This interface allows you to power up the Njax Assistant, connect store modules, and trigger Phantom AI.</p>
 
   <div class="tool">
     <h3>Start Voice Assistant</h3>
@@ -40,16 +39,7 @@
       togglePhantom: () => alert("Phantom Mode toggled."),
       syncStore: () => alert("Storefront synced successfully.")
     };
-  <script>
-  NjaxAI?.init && NjaxAI.init();
-</script>
+    NjaxAI.init && NjaxAI.init();
+  </script>
 </body>
 </html>
-<script>
-  const NjaxAI = {
-    startVoice: () => alert("Samantha voice activated."),
-    togglePhantom: () => alert("Phantom Mode toggled."),
-    syncStore: () => alert("Storefront synced successfully.")
-  };
-  NjaxAI.init && NjaxAI.init();
-</script>
