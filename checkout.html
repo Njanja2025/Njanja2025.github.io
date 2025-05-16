@@ -1,12 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Checkout | Njax Market</title>
   <link rel="stylesheet" href="njax.css" />
+  <script src="njax-agent.js" defer></script>
 </head>
-
 <body>
-  <h2>Njax Market - Checkout</h2>
+  <h2>Njax Market – Checkout</h2>
 
   <div class="tool">
     <h3>Confirm Your Order</h3>
@@ -14,10 +16,22 @@
     <ul>
       <li>Product: <strong>AI Content Kit</strong></li>
       <li>Price: <strong>$29.99</strong></li>
-      <li>Delivery: Instant Download</li>
+      <li>Delivery: Instant Downloads</li>
     </ul>
-    <button style="padding: 10px 20px; background-color: #00cc66; color: white; border: none; border-radius: 5px;">Confirm Purchase</button>
+    <button style="padding: 10px 20px; background-color: #08cc66; color: white; border: none; border-radius: 6px;">
+      Confirm & Download
+    </button>
   </div>
 
   <p><a href="index.html">Back to Home</a></p>
+
+  <script>
+    const NjaxAI = {
+      startVoice: () => alert("Samantha voice activated."),
+      togglePhantom: () => alert("Phantom Mode toggled."),
+      syncStore: () => alert("Storefront synced successfully.")
+    };
+    NjaxAI.init && NjaxAI.init();
+  </script>
 </body>
+</html>
