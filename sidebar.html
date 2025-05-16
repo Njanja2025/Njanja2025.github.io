@@ -1,0 +1,22 @@
+<div id="sidebar" class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="activate.html">Activate</a>
+  <a href="vault.html">Vault</a>
+  <a href="docs.html">Docs</a>
+  <a href="api-config.html">API</a>
+  <a href="support.html">Support</a>
+  <a href="settings.html">Settings</a>
+  <a href="logout.html">Logout</a>
+</div>
+sidebar.js
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("afterbegin", html);
+    });
+});
+In your HTML <head>:
+
+<script src="sidebar.js" defer></script>
