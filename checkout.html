@@ -1,0 +1,36 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Njax Checkout | Njax Market</title>
+  <link rel="stylesheet" href="njax.css">
+</head>
+
+<body>
+  <h2>Njax Secure Checkout</h2>
+
+  <form class="kit" style="max-width:500px; margin:auto;">
+    <h3>Customer Info</h3>
+    <label>Full Name:</label><br>
+    <input type="text" name="name" required style="width:100%; padding:10px;"><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" required style="width:100%; padding:10px;"><br><br>
+
+    <label>Product:</label><br>
+    <select name="product" style="width:100%; padding:10px;">
+      <option value="PromptMaster">PromptMaster</option>
+      <option value="VoiceoverVault">Voiceover Vault</option>
+      <option value="StartupBlueprint">AI Startup Blueprint</option>
+    </select><br><br>
+
+    <h3>Payment Method</h3>
+    <input type="radio" name="payment" value="card" checked> Credit/Debit Card<br>
+    <input type="radio" name="payment" value="paypal"> PayPal<br><br>
+
+    <button type="submit" class="download">Confirm & Pay</button>
+  </form>
+
+  <footer>
+    <p>Secure AI Checkout - Njax Market</p>
+  </footer>
+</body>
